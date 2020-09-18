@@ -45,5 +45,6 @@
       text-decoration none
       color white
       text-transform uppercase
+      font-family ITCAvantGardeProBold, sans-serif
 
 </style>
