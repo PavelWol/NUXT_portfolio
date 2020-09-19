@@ -3,9 +3,10 @@
     <div class="main">
 
       <h1>
-        webovy koder
+        webový
+        <span>kodér</span>
       </h1>
-      <img class="imac" src="~/assets/images/imac.png" />
+      <img class="imac" src="~/assets/images/imac.png" alt="" />
 
     </div>
   </div>
@@ -33,16 +34,16 @@ export default {
 .main
   display flex
   align-items center
-  position absolute
-  top 50%
-  transform translateY(-50%)
+  transform translateY(20%)
 
 h1
   font-size 120px
-  font-family ITCAvantGardeProBold, sans-serif
+  font-family ITCAvantGardeProBold
   text-transform uppercase
   letter-spacing -6px
   text-align right
+  span
+    color #df1a4a
 
 .imac
   width 50%

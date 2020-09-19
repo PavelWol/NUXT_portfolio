@@ -29,6 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/static/styles/global.styl'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -56,5 +57,6 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+     extractCSS: true,
   }
 }

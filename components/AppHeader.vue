@@ -44,6 +44,7 @@
       font-size 16px
       text-decoration none
       color white
+      font-weight bold
       text-transform uppercase
       font-family ITCAvantGardeProBold, sans-serif
 
