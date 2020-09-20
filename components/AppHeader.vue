@@ -11,14 +11,19 @@
       <li>
         <nuxt-link to="/references">references</nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/contact">Contact</nuxt-link>
+      </li>
     </ul>
   </header>
 </template>
 
 <script>
+
   export default {
     name: 'AppHeader'
   }
+
 </script>
 
 <style scoped lang="stylus">

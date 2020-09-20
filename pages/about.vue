@@ -1,44 +1,46 @@
 <template>
-  <div id="about-me" class="about-me">
-    <div class="container">
-      <div class="photo">
-        <!--<img src="img/bg/picme.png" alt="" />-->
+  <div class="pt about-me">
+    <div class="height-100">
+      <div class="container">
+        <div class="photo">
+          <img src="~/assets/images/picme.png" alt="">
+        </div>
+        <div class="scene-2">
+          <div class="rectanglephoto4">
+            <!--<img src="img/icons/rectanglephoto4.svg" alt="">-->
+          </div>
+          <div class="dotsphoto1">
+            <!--<img src="img/bg/dotsphoto1.png" alt="">-->
+          </div>
+          <div class="rectanglephoto2">
+            <!--<img src="img/icons/rectanglephoto2.svg" alt="">-->
+          </div>
+          <div class="rectanglephoto3">
+            <!--<img src="img/icons/rectanglephoto3.svg" alt="">-->
+          </div>
+          <div class="ovalphoto">
+            <!--<img src="img/icons/ovalphoto.svg" alt="">-->
+          </div>
+        </div>
       </div>
-      <div class="scene-2">
-        <div class="rectanglephoto4">
-          <!--<img src="img/icons/rectanglephoto4.svg" alt="">-->
+      <article class="about-chart">
+        <h4>Pár slov o mně</h4>
+        <div class="spacer-lg"></div>
+        <p>
+          Jmenuji se Pavel Wolinger a jsem nadšený kodér, kterého neodradí
+          žádná výzva. Co neznám to se naučím, svou práci miluji a baví mě
+          učit se novým věcem
+        </p>
+        <div class="spacer-lg"></div>
+        <div class="spacer-lg"></div>
+        <div class="rectanglephoto">
+          <!--<img src="img/icons/rectanglephoto.svg" alt="">-->
         </div>
-        <div class="dotsphoto1">
-          <!--<img src="img/bg/dotsphoto1.png" alt="">-->
+        <div class="chart">
+          <!--<img src="img/bg/chart.png" alt="" />-->
         </div>
-        <div class="rectanglephoto2">
-          <!--<img src="img/icons/rectanglephoto2.svg" alt="">-->
-        </div>
-        <div class="rectanglephoto3">
-          <!--<img src="img/icons/rectanglephoto3.svg" alt="">-->
-        </div>
-        <div class="ovalphoto">
-          <!--<img src="img/icons/ovalphoto.svg" alt="">-->
-        </div>
-      </div>
+      </article>
     </div>
-    <article class="about-chart">
-      <h4>Pár slov o mně</h4>
-      <div class="spacer-lg"></div>
-      <p>
-        Jmenuji se Pavel Wolinger a jsem nadšený kodér, kterého neodradí
-        žádná výzva. Co neznám to se naučím, svou práci miluji a baví mě
-        učit se novým věcem
-      </p>
-      <div class="spacer-lg"></div>
-      <div class="spacer-lg"></div>
-      <div class="rectanglephoto">
-        <!--<img src="img/icons/rectanglephoto.svg" alt="">-->
-      </div>
-      <div class="chart">
-        <!--<img src="img/bg/chart.png" alt="" />-->
-      </div>
-    </article>
   </div>
 </template>
 
@@ -64,7 +66,6 @@
 
 .about-me
   display flex
-  padding-top 10%
   max-width 1232px
   width 100%
   margin 0 auto

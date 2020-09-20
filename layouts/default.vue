@@ -2,15 +2,18 @@
   <div class="wrapper">
     <AppHeader />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
   import AppHeader from '../components/AppHeader';
+  import Footer from '../components/Footer';
 
   export default {
     components: {
-      AppHeader
+      AppHeader,
+      Footer
     },
     head: {
       bodyAttrs: {
@@ -34,30 +37,32 @@ body
   background-repeat no-repeat
   background-size cover
   overflow-x hidden
-  height 100vh
 
 .wrapper
   width 100%
   max-width 1232px
   margin 0 auto
   padding 24px
-  height 100vh
   position relative
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, p
   margin 0
+  color white
+
+a
+  text-decoration none
   color white
 
 .nuxt-link-exact-active
   color #df1a4a !important
 
 .page-enter-active, .page-leave-active
-  transition all 500ms ease
+  transition all 750ms ease
 
 .page-enter
-  transform translateX(100%)
+  transform translateX(150%)
 
 .page-leave-active
-  transform translateX(-100%)
+  transform translateX(-150%)
 
 </style>

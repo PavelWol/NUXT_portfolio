@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="main">
+  <div class="container pt">
+    <div class="main height-100">
 
       <h1>
         webový
@@ -34,11 +34,9 @@ export default {
 .main
   display flex
   align-items center
-  transform translateY(20%)
 
 h1
   font-size 120px
-  font-family ITCAvantGardeProBold
   text-transform uppercase
   letter-spacing -6px
   text-align right
