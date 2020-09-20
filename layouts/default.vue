@@ -20,6 +20,13 @@
         'class': 'body',
       }
     },
+    mounted() {
+      this.$nextTick(() => {
+        this.$nuxt.$loading.start()
+
+        setTimeout(() => this.$nuxt.$loading.finish(), 3000)
+      })
+    },
   };
 </script>
 
@@ -53,7 +60,7 @@ a
   text-decoration none
   color white
 
-.nuxt-link-exact-active
+.active-link.nuxt-link-exact-active
   color #df1a4a !important
 
 .page-enter-active, .page-leave-active

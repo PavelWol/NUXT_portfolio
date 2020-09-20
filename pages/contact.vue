@@ -76,14 +76,6 @@
           </a>
         </section>
       </section>
-      <div class="copyright">
-        <p>
-          Pavel Wolinger © Copyright 2020. All Rights Reversed.
-        </p>
-        <div id="wrapper">
-          <div id="pulsingheart"></div>
-        </div>
-      </div>
     </div>
 </template>
 
@@ -293,18 +285,6 @@ input.submit:active
   align-self flex-end
 
 
-.copyright
-  max-width 374px
-  margin 0 auto
-  padding-top 140px
-  padding-bottom 48px
-  display flex
-
-
-.copyright p
-  opacity 0.4
-  letter-spacing -0.75px
-  color #c1cedc
 
 
 </style>

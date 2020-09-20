@@ -31,6 +31,8 @@ export default {
   css: [
     '@/static/styles/global.styl'
   ],
+  loading: '~/components/loading.vue'
+  ,
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins

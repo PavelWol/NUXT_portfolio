@@ -2,7 +2,7 @@
   <div class="socials">
     <div class="online-text">
       <p>
-        Najděte mě online nebo <nuxt-link to="/contact">se Ozvěte</nuxt-link>.
+        Najděte mě online nebo <nuxt-link to="/contact">mi napište</nuxt-link>.
       </p>
     </div>
     <div class="sm-links">

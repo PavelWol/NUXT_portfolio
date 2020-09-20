@@ -1,18 +1,20 @@
 <template>
   <header class="header">
-    <img class="logo" src="~/assets/images/logo-straight.png" />
+    <nuxt-link to="/">
+      <img class="logo" src="~/assets/images/logo-straight.png" alt="" />
+    </nuxt-link>
     <ul class="navigation">
       <li>
-        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link class="active-link" to="/">Home</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/about">about</nuxt-link>
+        <nuxt-link class="active-link" to="/about">about</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/references">references</nuxt-link>
+        <nuxt-link class="active-link" to="/references">references</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/contact">Contact</nuxt-link>
+        <nuxt-link class="active-link" to="/contact">Contact</nuxt-link>
       </li>
     </ul>
   </header>
