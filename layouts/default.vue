@@ -32,8 +32,6 @@
 
 <style lang="stylus">
 
-
-
 *,*::before, *::after
   box-sizing border-box
 
@@ -49,7 +47,7 @@ body
   width 100%
   max-width 1232px
   margin 0 auto
-  padding 24px
+  padding 32px 24px 24px 24px
   position relative
 
 h1, h2, h3, h4, h5, h6, p

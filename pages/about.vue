@@ -68,6 +68,9 @@
 
 <style scoped lang="stylus">
 
+.about-me
+  min-height calc(100vh - 54px)
+
 .about-me .height-100
   min-height unset
   padding-top 5%

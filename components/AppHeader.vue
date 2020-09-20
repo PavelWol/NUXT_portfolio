@@ -42,11 +42,17 @@
   margin 0
   display flex
   align-items center
+  > :first-child
+    border-right 1px solid white
+  > :nth-child(2)
+    padding-left 16px
   li
     list-style none
     padding-right 16px
     :last-child
       padding-right 0
+    :hover
+      color #df1a4a
     a
       font-size 16px
       text-decoration none
@@ -54,5 +60,6 @@
       font-weight bold
       text-transform uppercase
       font-family ITCAvantGardeProBold, sans-serif
+      transition 250ms ease
 
 </style>
