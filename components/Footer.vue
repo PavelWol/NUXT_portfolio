@@ -39,6 +39,9 @@ export default {
 
 <style scoped lang="stylus">
 
+.socials
+  margin-top 10%
+
 .online-text
   border-top 1px solid white
   padding-top 32px

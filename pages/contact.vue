@@ -46,13 +46,13 @@
               <textarea placeholder="Vaše zpráva" name="message" id="message" rows="6"></textarea>
             </div>
             <div class="spacer-md"></div>
-          </div>
-          <input
+            <input
             type="submit"
             name="submit"
             class="submit"
             value="Odeslat"
-          />
+            />
+          </div>
         </form>
         <section class="socials">
           <a href="mailto:pw.wolinger@gmail.com">
@@ -165,7 +165,7 @@ footer
 
 .footer-heading
   max-width 527px
-  margin 0 auto 0 0
+  margin 0 0 0 auto
   position relative
 
 
@@ -183,18 +183,21 @@ footer
 .contact-form
   display flex
   justify-content space-between
+  flex-direction row-reverse
 
 
 .contact-form form
   width 60%
 
+.fields
+  max-width 584px
+  margin 0 0 0 auto
 
 div.half
   position relative
 
 
 div.half input
-  max-width 584px
   width 100%
   height 72px
   padding 0 24px
@@ -217,7 +220,6 @@ div.half input:focus, div.field textarea:focus
 
 
 div.field textarea
-  max-width 584px
   width 100%
   height 178px
   padding 28px 24px 28px 24px
@@ -231,7 +233,6 @@ div.field textarea
 
 
 input.submit
-  max-width 584px
   width 100%
   height 72px
   color #ffffff

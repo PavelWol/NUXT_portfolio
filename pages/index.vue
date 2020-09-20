@@ -1,8 +1,8 @@
 <template>
-  <div class="container pt">
+  <div class="container">
     <div class="main height-100">
 
-      <h1>
+      <h1 data-glitch="WEBOVÝ KODER">
         webový
         <span>kodér</span>
       </h1>

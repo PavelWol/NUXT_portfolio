@@ -1,5 +1,9 @@
 <template>
   <div class="pt about-me">
+    <h2 data-glitch="ABOUT ME">
+      ABOUT
+      <span>ME</span>
+    </h2>
     <div class="height-100">
       <div class="container">
         <div class="photo">
@@ -64,12 +68,9 @@
 
 <style scoped lang="stylus">
 
-.about-me
-  display flex
-  max-width 1232px
-  width 100%
-  margin 0 auto
-
+.about-me .height-100
+  min-height unset
+  padding-top 5%
 
 .container
   position relative

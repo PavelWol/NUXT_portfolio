@@ -1,5 +1,5 @@
 <template>
-  <div class="pt">
+  <div class="">
     <div class="references">
       <div class="rectangleref2">
         <!--<img src="img/icons/rectangleref2.svg" alt="">-->
@@ -108,17 +108,6 @@
 .ref-heading
   max-width 556px
   margin 0 0 0 auto
-
-
-.ref-heading h2
-  line-height 1.09
-  letter-spacing -4.13px
-  text-align right
-  position relative
-
-
-.ref-heading h2 span
-  color #df1a4a
 
 
 .ref-showcase-text

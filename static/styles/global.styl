@@ -29,9 +29,15 @@ body
 
 h2
   font-size 88px
+  line-height 1.09
+  letter-spacing -4.13px
+  text-align right
+  position relative
+  span
+    color #df1a4a
 
 .pt
-  /*padding-top 10%*/
+  padding-top 10%
 
 .height-100
   min-height calc(100vh - 54px)
@@ -39,4 +45,68 @@ h2
   display: flex;
   align-items: center;
   justify-content: center;
+
+@keyframes glitch
+  9%
+    transform none
+  11%
+    transform none
+
+  10%
+    transform translate(3px, -3px)
+
+  47%
+    transform none
+    filter none
+  53%
+    transform none
+    filter none
+
+  49%
+    transform translate(-10px, -10px)
+    filter blur(1px)
+    opacity .5
+
+  50%
+    transform translate(10px, 10px)
+    filter blur(1px)
+    opacity .5
+
+  51%
+    transform translate(10px, -10px)
+    filter blur(1px)
+    opacity .5
+
+  89%
+    transform none
+    filter none
+  91%
+    transform none
+    filter none
+
+  90%
+    transform translate(-3px, 3px)
+
+h1
+  display grid
+  position relative
+  z-index 1
+
+h1:before, h1:after, h2:before, h2:after
+  content attr(data-glitch)
+  position absolute
+  left 0
+  right 0
+  top 0
+  bottom 0
+
+h1:before, h2:before
+  z-index -1
+  color #df1a4a
+  animation glitch 10s linear infinite
+
+h1:after, h2:after
+  z-index -2
+  color white
+  animation glitch 10s linear infinite reverse
 
