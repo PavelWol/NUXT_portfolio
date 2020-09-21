@@ -471,7 +471,7 @@
 
 .active,
 .dot:hover
-  background-color var(--main-color)
+  background-color #df1a4a
   border 1px solid white
 
 .fade

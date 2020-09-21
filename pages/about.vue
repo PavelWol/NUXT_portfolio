@@ -36,12 +36,20 @@
           učit se novým věcem
         </p>
         <div class="spacer-lg"></div>
-        <div class="spacer-lg"></div>
         <div class="rectanglephoto">
           <!--<img src="img/icons/rectanglephoto.svg" alt="">-->
         </div>
-        <div class="chart">
-          <!--<img src="img/bg/chart.png" alt="" />-->
+        <div class="animated-skills first">
+          <div class="first-skill"></div>
+          <span>HTML</span>
+        </div>
+        <div class="animated-skills second">
+          <div class="second-skill"></div>
+          <span>CSS</span>
+        </div>
+        <div class="animated-skills third">
+          <div class="third-skill"></div>
+          <span>JAVASCRIPT</span>
         </div>
       </article>
     </div>
@@ -67,6 +75,94 @@
 </script>
 
 <style scoped lang="stylus">
+
+.animated-skills
+  width 100%
+  height 18px
+  margin-top 32px
+  display flex
+  position relative
+  max-width 450px
+  .first-skill
+    height 18px
+    background-color #df1a4a
+    animation progress 5s forwards
+    animation-iteration-count 1
+    &:after
+      content " "
+      position absolute
+      display block
+      width 100%
+      height 100%
+      top 0
+      left 0
+      z-index -1
+      background #df1a4a
+      transform-origin bottom left
+      -ms-transform skew(-30deg, 0deg)
+      -webkit-transform skew(-30deg, 0deg)
+      transform skew(-30deg, 0deg)
+      animation progress 5s forwards
+  span
+    font-size 16px
+    position absolute
+    right -48px
+    transform translateX(100%)
+    color #df1a4a
+    font-family ITCAvantGardeProBold, sans-serif
+.second
+  max-width 350px
+  .second-skill
+    background-color #34b4eb
+    animation progress 5s forwards
+    animation-iteration-count 1
+    &:after
+      content " "
+      position absolute
+      display block
+      width 100%
+      height 100%
+      top 0
+      left 0
+      z-index -1
+      background #34b4eb
+      transform-origin bottom left
+      -ms-transform skew(-30deg, 0deg)
+      -webkit-transform skew(-30deg, 0deg)
+      transform skew(-30deg, 0deg)
+      animation progress 5s forwards
+  span
+    color #34b4eb
+.third
+  max-width 250px
+  .third-skill
+    background-color #34ebdc
+    animation progress 5s forwards
+    animation-iteration-count 1
+    &:after
+      content " "
+      position absolute
+      display block
+      width 100%
+      height 100%
+      top 0
+      left 0
+      z-index -1
+      background #34ebdc
+      transform-origin bottom left
+      -ms-transform skew(-30deg, 0deg)
+      -webkit-transform skew(-30deg, 0deg)
+      transform skew(-30deg, 0deg)
+      animation progress 5s forwards
+  span
+    color #34ebdc
+
+@keyframes progress
+  from
+    width 0
+
+  to
+    width 100%
 
 .about-me
   min-height calc(100vh - 54px)
