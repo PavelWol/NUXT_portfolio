@@ -23,7 +23,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+       src: '../js/slider.js', body: true
+      }
+    ],
   },
   /*
   ** Global CSS

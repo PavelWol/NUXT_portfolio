@@ -51,7 +51,11 @@ export default {
   p
     font-size 18px
     a
-      blue
+      color #df1a4a
+      transition 250ms ease
+      &:hover
+        border-bottom 1px solid #df1a4a
+        transition 250ms ease
 
 .sm-links
   width 100%

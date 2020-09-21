@@ -205,7 +205,6 @@ div.half input
   border solid 1px rgba(255, 255, 255, 0.1)
   background-color #131c2b
   border-radius 3px
-  font-family ITCAvantGardePro-Bk, sans-serif
   color #ffffff
 
 
@@ -228,7 +227,6 @@ div.field textarea
   background-color #131c2b
   resize none
   border-radius 3px
-  font-family ITCAvantGardePro-Bk, sans-serif
   color #ffffff
 
 
@@ -236,7 +234,6 @@ input.submit
   width 100%
   height 72px
   color #ffffff
-  font-family ITCAvantGardePro, sans-serif
   outline none
   border:solid 1px rgba(223, 26, 74, 0.9)
   background-color #df1a4a

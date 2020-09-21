@@ -88,6 +88,73 @@
         </div>
       </div>
     </div>
+    <div class="ppl-references">
+      <div class="they-said">
+        <h4>ŘEKLI O MNĚ</h4>
+      </div>
+      <div class="spacer-lg"></div>
+      <div class="spacer-sm"></div>
+      <div class="they-said-m">
+        <div class="slideshow-container">
+          <a class="prev" onclick="plusSlides(-1)"><img src="~/assets/images/arrow-left.svg" alt=""></a>
+          <div class="mySlides fade first-slide">
+            <div class="text">
+              „Pavel je velice cílevědomý a snaživý,
+              má opravdu veliký zápal pro svou práci,
+              která ho velice baví. Pokora a důslednost jsou slova,
+              která ho charakterizují,
+              rozhodně doporučuji jeho služby.“
+            </div>
+            <div class="spacer-lg"></div>
+            <div class="they-said-ppl">
+              <p>Jan Wolinger,</p>
+              <p>Product designer</p>
+            </div>
+            <div class="spacer-lg"></div>
+          </div>
+          <div class="mySlides fade">
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cumque temporibus necessitatibus iste! Quis eaque eos sit,
+              veritatis dolore ea quia voluptate illo minima molestiae earum!
+            </div>
+            <div class="spacer-lg"></div>
+            <div class="they-said-ppl">
+              <p>Vojtěch Fišar,</p>
+              <p>Twitch streamer</p>
+            </div>
+            <div class="spacer-lg"></div>
+          </div>
+          <div class="mySlides fade">
+            <div class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Itaque laboriosam dolorum ipsa optio sapiente in exercitationem
+              numquam facilis magnam suscipit totam asperiores dignissimos
+              amet nostrum repudiandae officia quibusdam.
+            </div>
+            <div class="spacer-lg"></div>
+            <div class="they-said-ppl">
+              <p>Melichar Humáč,</p>
+              <p>Lorem ipsumáč</p>
+            </div>
+            <div class="spacer-lg"></div>
+          </div>
+          <a class="next" onclick="plusSlides(1)"><img src="~/assets/images/arrow-right.svg" alt=""></a>
+        </div>
+        <br>
+        <div class="slide-dots">
+          <div class="dot-container" onclick="currentSlide(1)">
+            <span class="dot"></span>
+          </div>
+          <div class="dot-container" onclick="currentSlide(2)">
+            <span class="dot"></span>
+          </div>
+          <div class="dot-container" onclick="currentSlide(3)">
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -311,6 +378,120 @@
   /* padding-left 40px  */
   width 100%
 
+.ppl-references
+  transform translateY(-25%)
 
+.they-said
+  max-width 1232px
+  width 100%
+  margin 0 auto
+  h4
+    letter-spacing -0.75px
+    text-align center
+
+.they-said-ppl
+  display flex
+  justify-content center
+  p
+    font-family ITCAvantGardePro-Md, sans-serif
+    &:first-child
+      color #df1a4a
+
+.they-said-m
+  position relative
+  max-width 1232px
+  width 100%
+  margin 0 auto
+
+.mySlides
+  display none
+
+.first-slide
+  display block
+
+.slideshow-container
+  position relative
+  display flex
+
+.prev,
+.next
+  cursor pointer
+  color white
+  font-weight bold
+  transition 0.6s ease
+  border-radius 0 3px 3px 0
+  width 50%
+
+.prev
+  text-align left
+  align-self center
+  padding-right 48px
+
+.prev img, .next img
+  width 100%
+
+.next
+  border-radius 3px 0 0 3px
+  text-align right
+  align-self center
+  padding-left 48px
+
+.text
+  width 100%
+  text-align center
+  font-size 32px
+  font-style italic
+  line-height 1.69
+  letter-spacing -0.67px
+  color #c1cedc
+
+.numbertext
+  color #f2f2f2
+  font-size 12px
+  padding 8px 12px
+  position absolute
+  top 0
+
+.slide-dots
+  display flex
+  justify-content space-evenly
+
+.dot-container
+  margin -16px
+  padding 16px
+
+.dot
+  cursor pointer
+  height 13px
+  width 13px
+  background-color #c1cedc
+  border-radius 50%
+  display inline-block
+  transition background-color 0.6s ease
+
+.active,
+.dot:hover
+  background-color var(--main-color)
+  border 1px solid white
+
+.fade
+  -webkit-animation-name fade
+  -webkit-animation-duration 1.5s
+  animation-name fade
+  animation-duration 1.5s
+
+@-webkit-keyframes fade
+  from
+    opacity .4
+
+  to
+    opacity 1
+
+@keyframes fade
+  from
+    opacity .4
+
+  to
+    opacity 1
 
 </style>

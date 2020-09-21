@@ -27,15 +27,49 @@
 body
   font-family ITCAvantGardeProBk,sans-serif
 
+h1
+  display grid
+  position relative
+  z-index 1
+  font-family ITCAvantGardeProBold, sans-serif
+
+h1:before, h1:after, h2:before, h2:after
+  content attr(data-glitch)
+  position absolute
+  left 0
+  right 0
+  top 0
+  bottom 0
+
+h1:before, h2:before
+  z-index -1
+  color #df1a4a
+  animation glitch 10s linear infinite
+
+h1:after, h2:after
+  z-index -2
+  color white
+  animation glitch 10s linear infinite reverse
+
 h2
   font-size 88px
   line-height 1.09
   letter-spacing -4.13px
   text-align right
   position relative
-  font-family ITCAvantGardeProBold
+  font-family ITCAvantGardeProBold, sans-serif
   span
     color #df1a4a
+
+h4
+  font-family ITCAvantGardeProBold, sans-serif
+
+input[type="text"],
+textarea
+  font-family ITCAvantGardeProBk, sans-serif
+
+input[type="submit"]
+  font-family ITCAvantGardeProBold, sans-serif
 
 .pt
   padding-top 10%
@@ -88,27 +122,5 @@ h2
   90%
     transform translate(-3px, 3px)
 
-h1
-  display grid
-  position relative
-  z-index 1
-  font-family ITCAvantGardeProBold, sans-serif
 
-h1:before, h1:after, h2:before, h2:after
-  content attr(data-glitch)
-  position absolute
-  left 0
-  right 0
-  top 0
-  bottom 0
-
-h1:before, h2:before
-  z-index -1
-  color #df1a4a
-  animation glitch 10s linear infinite
-
-h1:after, h2:after
-  z-index -2
-  color white
-  animation glitch 10s linear infinite reverse
 
