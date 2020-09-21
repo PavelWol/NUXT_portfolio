@@ -37,7 +37,6 @@ export default {
 
 h1
   font-size 120px
-  font-family ITCAvantGardeProBold
   text-transform uppercase
   letter-spacing -6px
   text-align right

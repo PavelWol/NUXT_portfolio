@@ -29,7 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/static/styles/global.styl'
+    '~/static/styles/global.styl'
   ],
   loading: '~/components/loading.vue'
   ,
@@ -59,6 +59,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-     extractCSS: true,
+    extractCSS: true,
+    cssSourceMap: false,
   }
 }
