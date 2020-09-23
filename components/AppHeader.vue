@@ -8,13 +8,13 @@
         <nuxt-link class="active-link" to="/">Home</nuxt-link>
       </li>
       <li>
-        <nuxt-link class="active-link" to="/about">about</nuxt-link>
+        <nuxt-link class="active-link" to="/about">o mně</nuxt-link>
       </li>
       <li>
-        <nuxt-link class="active-link" to="/references">references</nuxt-link>
+        <nuxt-link class="active-link" to="/references">reference</nuxt-link>
       </li>
       <li>
-        <nuxt-link class="active-link" to="/contact">Contact</nuxt-link>
+        <nuxt-link class="active-link" to="/contact">kontakt</nuxt-link>
       </li>
     </ul>
   </header>

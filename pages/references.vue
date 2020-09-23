@@ -21,8 +21,8 @@
         <div class="spacer-lg"></div>
         <div class="ref-showcase-text">
           <p>
-            Ukázky několika vybraných projektů a mých side projektů, které
-            jsem vytvářel za účelem se něco naučit.
+            Ukázky několika vybraných projektů, které
+            jsme vytvářeli s týmem maesty.co.
           </p>
         </div>
       </section>
@@ -50,7 +50,7 @@
             <img src="~/assets/images/map-service.png" alt="" />
             <div class="tabs-text">
               <h3>Kofola</h3>
-              <p>lorem ipsum</p>
+              <p>Kde voní kofola</p>
             </div>
           </a>
         </div>
@@ -67,7 +67,7 @@
               <img src="~/assets/images/ods-web.png" alt="" />
               <div class="tabs-text">
                 <h3>ODS</h3>
-                <p>lorem ipsum</p>
+                <p>Krajské volby 2020</p>
               </div>
             </a>
           </div>
@@ -159,7 +159,20 @@
 </template>
 <script>
 
-  export default {}
+export default {
+  head() {
+    return {
+      title: 'Reference',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'referance'
+        }
+      ]
+    }
+  }
+}
 
 </script>
 <style scoped lang="stylus">
@@ -250,7 +263,6 @@
 
 .kofola
   transform scale(.85)
-  display none
 
 
 .kofola .future-img
@@ -341,17 +353,21 @@
 
 .ods
   transform translateY(68px)
-  display none
 
+.bg-div .tabs-text h3
+  position relative
+  z-index 1
+  font-family ITCAvantGardeProBold, sans-serif
+  font-size 20px
 
-.bg-div .tabs-text *
+.bg-div .tabs-text p
   opacity 0
   transition all .3s
   position relative
   z-index 1
 
 
-.bg-div:hover .tabs-text *
+.bg-div:hover .tabs-text p
   opacity 1
   transition all .3s
 

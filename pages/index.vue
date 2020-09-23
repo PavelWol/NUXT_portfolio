@@ -16,7 +16,7 @@
 export default {
   head() {
       return {
-        title: 'Welcome',
+        title: 'Pavel Wolinger | Webový kodér',
         meta: [
           {
             hid: 'description',

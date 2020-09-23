@@ -26,7 +26,8 @@ export default {
     ],
     script: [
       {
-       src: '../js/slider.js', body: true
+        src: '../js/slider.js',
+        body: true,
       }
     ],
   },

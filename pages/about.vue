@@ -1,8 +1,8 @@
 <template>
   <div class="pt about-me">
-    <h2 data-glitch="ABOUT ME">
-      ABOUT
-      <span>ME</span>
+    <h2 data-glitch="TOHLE JSEM JÁ">
+      TOHLE JSEM
+      <span>JÁ</span>
     </h2>
     <div class="height-100">
       <div class="container">
@@ -32,8 +32,10 @@
         <div class="spacer-lg"></div>
         <p>
           Jmenuji se Pavel Wolinger a jsem nadšený kodér, kterého neodradí
-          žádná výzva. Co neznám to se naučím, svou práci miluji a baví mě
-          učit se novým věcem
+          žádná výzva. S kodéřinou jsem začal poměrně nedávno,
+          proto v tuto chvíli prohlubuji své znalosti a dovednosti,
+          abych mohl v blízké budoucnosti pracovat na tvorbě zajímavých webů a webových aplikací.
+          Náš tým z <a href="https://www.maesty.co">maesty.co</a> jsme malý, odhodlaný tym.
         </p>
         <div class="spacer-lg"></div>
         <div class="rectanglephoto">
@@ -60,12 +62,12 @@
   export default {
     head() {
       return {
-        title: 'about me',
+        title: 'O mně',
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: 'about me page'
+            content: 'o mne'
           }
         ]
       }
@@ -268,7 +270,7 @@
 
 
 .about-chart p
-  font-size 32px
+  font-size 28px
   line-height 1.69
   letter-spacing -0.67px
   color #c1cedc

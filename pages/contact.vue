@@ -7,9 +7,9 @@
         <!--<img src="img/icons/dotsref.svg" alt="">-->
       </div>
       <div class="footer-heading">
-        <h2 data-glitch="ZŮSTAŇME V KONTAKTU">
-          ZŮSTAŇME V
-          <span>KONTAKTU</span>
+        <h2 data-glitch="NEVÁHEJTE MĚ KONTAKTOVAT">
+          NEVÁHEJTE MĚ
+          <span>KONTAKTOVAT</span>
         </h2>
         <div class="rectanglefot4">
           <!--<img src="img/icons/rectanglefot4.svg" alt="">-->
@@ -82,7 +82,21 @@
 <script>
 
 export default {
-  name: 'Footer'
+  name: 'Footer',
+
+  head() {
+      return {
+        title: 'Kontakt',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'kontakt'
+          }
+        ]
+      }
+    }
+
 }
 
 </script>
@@ -164,7 +178,6 @@ footer
 
 
 .footer-heading
-  max-width 527px
   margin 0 0 0 auto
   position relative
 
