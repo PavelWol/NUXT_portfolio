@@ -1,7 +1,9 @@
 <template>
   <div class="wrapper">
     <AppHeader />
-    <Nuxt />
+    <div class="mask">
+      <Nuxt />
+    </div>
     <Footer />
   </div>
 </template>
@@ -50,6 +52,9 @@ body
   padding 32px 24px 24px 24px
   position relative
 
+.mask
+  overflow hidden
+
 h1, h2, h3, h4, h5, h6, p
   margin 0
   color white
@@ -62,7 +67,7 @@ a
   color #df1a4a !important
 
 .page-enter-active, .page-leave-active
-  transition all 750ms ease
+  transition all 1.5s ease
 
 .page-enter
   transform translateX(150%)
