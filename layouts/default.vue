@@ -52,8 +52,8 @@ body
   padding 32px 24px 24px 24px
   position relative
 
-.mask
-  overflow hidden
+/*.mask
+  overflow hidden*/
 
 h1, h2, h3, h4, h5, h6, p
   margin 0
@@ -67,12 +67,17 @@ a
   color #df1a4a !important
 
 .page-enter-active, .page-leave-active
-  transition all 1.5s ease
+  transition 500ms
 
-.page-enter
-  transform translateX(150%)
+.page-enter, .page-leave-to
+  opacity 0
 
-.page-leave-active
-  transform translateX(-150%)
+@media (max-width: 950px)
+
+  .wrapper
+    max-width 450px
+
+  h1, h2
+    font-size 58px
 
 </style>

@@ -46,4 +46,15 @@ h1
 .imac
   width 50%
 
+@media (max-width: 950px)
+
+  .main
+    flex-direction column
+    .imac
+      width 100%
+
+  h1
+    font-size 80px
+    text-align center
+
 </style>

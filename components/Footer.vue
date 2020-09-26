@@ -76,4 +76,17 @@ export default {
     width 24px
     margin-right 24px
 
+@media (max-width: 950px)
+
+  .online-text
+    max-width unset
+
+
+  .sm-links
+    padding-bottom 80px
+    p
+      display none
+    img
+      margin 0
+
 </style>

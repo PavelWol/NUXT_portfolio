@@ -49,9 +49,9 @@
   li
     list-style none
     padding-right 16px
-    :last-child
+    &:last-child
       padding-right 0
-    :hover
+    &:hover
       color #df1a4a
     a
       font-size 16px
@@ -61,5 +61,18 @@
       text-transform uppercase
       font-family ITCAvantGardeProBold, sans-serif
       transition 250ms ease
+
+@media (max-width: 950px)
+
+  .navigation
+    position fixed
+    justify-content space-between
+    max-width calc(450px - 48px)
+    transform translateX(-24px)
+    bottom 0
+    width 100%
+    z-index 99
+    background-color #c1cedc
+    padding 16px
 
 </style>

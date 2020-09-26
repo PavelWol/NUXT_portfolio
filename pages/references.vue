@@ -205,6 +205,7 @@ export default {
 
 .tabs
   display flex
+  justify-content center
 
 
 .tab
@@ -509,5 +510,44 @@ export default {
 
   to
     opacity 1
+
+@media (max-width: 1150px)
+
+  .red-black
+    transform translateY(-185px)
+
+  .blue
+    transform translateY(-110px) scale(0.85)
+
+@media (max-width: 950px)
+
+  .tabs
+    flex-direction column
+
+  .tab
+    transform unset
+
+  .red-black, .blue
+    transform unset
+
+  .blue-green
+    flex-direction column
+
+  .bg-div
+    max-width unset
+    max-height unset
+    transform unset
+
+  .kofola
+    transform unset
+
+  .ppl-references
+    transform unset
+
+  .slideshow-container
+    flex-direction column
+    .next, .prev
+      display none
+
 
 </style>

@@ -274,8 +274,6 @@ input.submit:active
 
 .socials
   width 40%
-  padding-left 40px
-
 
 .socials
   a
@@ -296,7 +294,15 @@ input.submit:active
   align-self flex-end
 
 
+@media (max-width: 950px)
 
+  .contact-form
+    flex-direction column
+    form
+      width 100%
+
+  .socials
+    width 100%
 
 </style>
 
