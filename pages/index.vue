@@ -6,7 +6,10 @@
         webový
         <span>kodér</span>
       </h1>
-      <img class="imac" src="~/assets/images/imac.png" alt="" />
+      <transition name="animate">
+        <img v-show="show" class="imac" src="~/assets/images/imac.png" alt="" />
+      </transition>
+      <div @click="show = !show">click me</div>
 
     </div>
   </div>
@@ -25,11 +28,25 @@ export default {
           }
         ]
       }
+    },
+  data () {
+    return {
+      show: false
     }
-}
+  }
+  }
 </script>
 
 <style scoped lang="stylus">
+
+.animate-enter-active, .animate-leave-active
+  transition 500ms ease
+
+.animate-enter, .animate-leave-to
+  opacity 0
+
+.animate-enter-to, .animate-leave
+  opacity 1
 
 .main
   display flex

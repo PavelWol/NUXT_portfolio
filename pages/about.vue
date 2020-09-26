@@ -35,7 +35,6 @@
           žádná výzva. S kodéřinou jsem začal poměrně nedávno,
           proto v tuto chvíli prohlubuji své znalosti a dovednosti,
           abych mohl v blízké budoucnosti pracovat na tvorbě zajímavých webů a webových aplikací.
-          Náš tým z <a href="https://www.maesty.co">maesty.co</a> jsme malý, odhodlaný tym.
         </p>
         <div class="spacer-lg"></div>
         <div class="rectanglephoto">

@@ -52,8 +52,8 @@ body
   padding 32px 24px 24px 24px
   position relative
 
-.mask
-  overflow hidden
+/*.mask
+  overflow hidden*/
 
 h1, h2, h3, h4, h5, h6, p
   margin 0
@@ -67,12 +67,24 @@ a
   color #df1a4a !important
 
 .page-enter-active, .page-leave-active
-  transition all 1.5s ease
+  transition 500ms
 
-.page-enter
-  transform translateX(150%)
+.container.page-enter-active .main h1, .container.page-leave-active .main h1
+  transition 500ms
 
-.page-leave-active
-  transform translateX(-150%)
+.container.page-enter .main h1, .container.page-leave-to .main h1
+  opacity 0
+  transform translateY(15%)
+
+.container.page-enter-active .main img, .container.page-leave-active .main img
+  transition 500ms
+
+.container.page-enter .main img, .container.page-leave-to .main img
+  opacity 0
+  transform translateY(-15%)
+
+.page-enter, .page-leave-to
+  opacity 0
+
 
 </style>

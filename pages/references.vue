@@ -21,8 +21,8 @@
         <div class="spacer-lg"></div>
         <div class="ref-showcase-text">
           <p>
-            Ukázky několika vybraných projektů, které
-            jsme vytvářeli s týmem maesty.co.
+            Ukázky několika vybraných projektů, které jsem
+            vytvářel sám nebo s týmem maesty.co.
           </p>
         </div>
       </section>
