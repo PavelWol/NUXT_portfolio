@@ -15,17 +15,17 @@
 <script>
 export default {
   head() {
-      return {
-        title: 'Pavel Wolinger | Webový kodér',
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'about me page'
-          }
-        ]
-      }
+    return {
+      title: 'Pavel Wolinger | Webový kodér',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'about me page'
+        }
+      ]
     }
+  },
 }
 </script>
 

@@ -303,6 +303,9 @@ input.submit:active
 
   .socials
     width 100%
+    padding 80px 0
+    p
+      font-size 20px
 
 </style>
 

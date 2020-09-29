@@ -5,26 +5,10 @@
         Najdete mně online nebo <nuxt-link to="/contact">mi napište</nuxt-link>.
       </p>
     </div>
-    <div class="sm-links">
-      <a href="mailto:pw.wolinger@gmail.com">
-        <img src="~/assets/images/email.png" alt="">
-        <p>pw.wolinger@gmail.com</p>
-      </a>
-      <div class="spacer-lg"></div>
-      <a href="tel:+420 777 051 053">
-        <img src="~/assets/images/phone.png" alt="">
-        <p>+420 777 051 053</p>
-      </a>
-      <div class="spacer-lg"></div>
-      <a href="">
-        <img src="~/assets/images/facebook.png" alt="">
-        <p>Facebook</p>
-      </a>
-      <div class="spacer-lg"></div>
-      <a href="">
-        <img src="~/assets/images/github.png" alt="">
-        <p>Github</p>
-      </a>
+    <div class="copyright">
+      <p>
+        Pavel Wolinger © Copyright 2020. All Rights Reversed.
+      </p>
     </div>
   </div>
 </template>
@@ -45,7 +29,7 @@ export default {
 .online-text
   border-top 1px solid white
   padding-top 32px
-  padding-bottom 16px
+  padding-bottom 48px
   max-width 35%
   width 100%
   p
@@ -57,11 +41,11 @@ export default {
         border-bottom 1px solid #df1a4a
         transition 250ms ease
 
-.sm-links
+.copyright
   width 100%
   padding-bottom 40px
   display flex
-  justify-content space-between
+  justify-content center
 
   a
     display flex
@@ -71,6 +55,7 @@ export default {
   p
     font-size 16px
     letter-spacing -1.13px
+    color rgba(255, 255, 255, .5)
 
   img
     width 24px
@@ -82,11 +67,7 @@ export default {
     max-width unset
 
 
-  .sm-links
+  .copyright
     padding-bottom 80px
-    p
-      display none
-    img
-      margin 0
 
 </style>

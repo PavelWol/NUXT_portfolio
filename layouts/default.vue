@@ -78,6 +78,6 @@ a
     max-width 450px
 
   h1, h2
-    font-size 58px
+    font-size 40px
 
 </style>

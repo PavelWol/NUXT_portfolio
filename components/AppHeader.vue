@@ -67,7 +67,7 @@
   .navigation
     position fixed
     justify-content space-between
-    max-width calc(450px - 48px)
+    max-width 450px
     transform translateX(-24px)
     bottom 0
     width 100%
