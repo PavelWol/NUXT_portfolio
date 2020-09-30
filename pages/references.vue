@@ -10,7 +10,7 @@
       <div class="dotsref">
         <!--<img src="img/icons/dotsref.svg" alt="">-->
       </div>
-      <section class="ref-text">
+      <section class="pt ref-text">
         <div class="ref-heading">
           <h2 data-glitch="MOJE REFERENCE">
             MOJE
@@ -179,10 +179,6 @@ export default {
 
 .references
   position relative
-
-
-.ref-text
-  padding-top 10%
 
 
 .ref-heading
@@ -527,6 +523,17 @@ export default {
   .tab
     transform unset
 
+  .red-black
+    > :not(:first-child)
+      margin-top 32px
+
+  .blue-green
+    > *
+      margin-top 32px
+
+  .ods
+    margin-top 32px
+
   .red-black, .blue
     transform unset
 
@@ -540,14 +547,21 @@ export default {
 
   .kofola
     transform unset
+    .tabs-text
+      *
+        color black
 
   .ppl-references
     transform unset
+    padding 80px 0
 
   .slideshow-container
     flex-direction column
     .next, .prev
       display none
+
+  .text
+    font-size 20px
 
 
 </style>

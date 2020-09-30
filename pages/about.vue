@@ -283,5 +283,26 @@
   .about-me .height-100
     flex-direction column
 
+  .photo
+    margin 32px auto
+    padding 0
+
+  .about-chart
+    p
+      font-size 24px
+
+  .animated-skills span
+    transform unset
+    top -22px
+    right unset
+
+  .first
+    max-width 300px
+
+  .second
+    max-width 250px
+
+  .third
+    max-width 200px
 
 </style>

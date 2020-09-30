@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-container">
+  <div class="pt footer-container">
       <div class="rectanglefot">
         <!--<img src="img/icons/rectanglefot.svg" alt="">-->
       </div>
@@ -173,7 +173,6 @@ footer
   max-width 1232px
   width 100%
   margin 0 auto
-  padding-top 10%
   position relative
 
 
