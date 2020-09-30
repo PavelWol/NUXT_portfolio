@@ -9,9 +9,12 @@
       <transition name="animate">
         <img v-show="show" class="imac" src="~/assets/images/imac.png" alt="" />
       </transition>
-      <div @click="show = !show">click me</div>
 
     </div>
+    <div style="cursor: pointer;" @click="show = !show">click me</div>
+    <h2 class="testing-msg">
+      {{message}}
+    </h2>
   </div>
 </template>
 
@@ -31,7 +34,8 @@ export default {
     },
   data () {
     return {
-      show: false
+      show: false,
+      message: 'HELLO VUE'
     }
   }
   }

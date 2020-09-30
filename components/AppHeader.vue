@@ -4,17 +4,8 @@
       <img class="logo" src="~/assets/images/logo-straight.png" alt="" />
     </nuxt-link>
     <ul class="navigation">
-      <li>
-        <nuxt-link class="active-link" to="/">Home</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link class="active-link" to="/about">o mně</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link class="active-link" to="/references">reference</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link class="active-link" to="/contact">kontakt</nuxt-link>
+      <li v-for="item in navItems">
+        <nuxt-link :to=item.link class="active-link">{{item.text}}</nuxt-link>
       </li>
     </ul>
   </header>
@@ -23,7 +14,29 @@
 <script>
 
   export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data() {
+      return {
+        navItems: [
+          {
+            text: 'Home',
+            link: '/'
+          },
+          {
+            text: 'About',
+             link: '/about'
+          },
+          {
+            text: 'References',
+            link: '/references'
+          },
+          {
+            text: 'Contact',
+            link: '/contact'
+          },
+        ]
+      }
+    },
   }
 
 </script>
