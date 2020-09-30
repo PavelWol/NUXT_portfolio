@@ -144,7 +144,7 @@
         <br>
         <div class="slide-dots">
           <div class="dot-container" onclick="currentSlide(1)">
-            <span class="dot"></span>
+            <span class="dot active"></span>
           </div>
           <div class="dot-container" onclick="currentSlide(2)">
             <span class="dot"></span>
