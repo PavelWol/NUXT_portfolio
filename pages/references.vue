@@ -20,7 +20,7 @@
       <div class="tabs">
         <div class="red-black">
           <div class="tab red">
-            <a href="http://maesty.co" class="bg-div bg-div-red">
+            <a target="_blank" href="http://maesty.co" class="bg-div bg-div-red">
               <img src="~/assets/images/red.png" alt="" />
               <div class="tabs-text">
                 <h3>MAESTY</h3>
@@ -37,7 +37,7 @@
               </div>
             </a>
           </div>
-          <a class="bg-div bg-div-green kofola">
+          <a target="_blank" href="https://kdevonikofola.cz/" class="bg-div bg-div-green kofola">
             <img src="~/assets/images/map-service.png" alt="" />
             <div class="tabs-text">
               <h3>Kofola</h3>
@@ -47,14 +47,14 @@
         </div>
         <div class="blue-green">
           <div class="tab blue">
-            <a href="http://www.arched.cz" class="bg-div bg-div-blue">
+            <a target="_blank" href="http://www.arched.cz" class="bg-div bg-div-blue">
               <img src="~/assets/images/blue.png" alt="" />
               <div class="tabs-text">
                 <h3>ARCHED</h3>
                 <p>Portfolio architekta</p>
               </div>
             </a>
-            <a class="bg-div bg-div-red ods">
+            <a target="_blank" href="https://www.modryplan.cz/" class="bg-div bg-div-red ods">
               <img src="~/assets/images/ods-web.png" alt="" />
               <div class="tabs-text">
                 <h3>ODS</h3>
@@ -63,7 +63,7 @@
             </a>
           </div>
           <div class="tab green">
-            <a href="http://www.cirkevelim.cz/" class="bg-div bg-div-green">
+            <a target="_blank" href="http://www.cirkevelim.cz/" class="bg-div bg-div-green">
               <img src="~/assets/images/green.png" alt="" />
               <div class="tabs-text">
                 <h3>ELIM</h3>
@@ -531,8 +531,8 @@ export default {
 
   .bg-div
     max-width unset
-    max-height unset
     transform unset
+    max-height 441px
 
   .kofola
     transform unset
@@ -548,6 +548,12 @@ export default {
 
   .text
     font-size 20px
+
+
+@media (min-width: 950px)
+
+  .slide-dots
+    display none
 
 
 </style>

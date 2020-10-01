@@ -58,7 +58,8 @@ export default {
     content ""
     background #df1a4a
     height 0
-    width 80%
+    width 100%
+    max-width 90%
     position absolute
     z-index 1
     bottom 0
@@ -118,12 +119,19 @@ export default {
   100%
     opacity 0
 
-@media (max-width: 450px)
+@media (max-width: 1100px)
+
+  .background
+    &::after
+      font-size 80px
+
+
+@media (max-width: 950px)
 
   .background
     &::before
       width calc(100% - 48px)
     &::after
-      font-size 40px
+      font-size 38px
 
 </style>
