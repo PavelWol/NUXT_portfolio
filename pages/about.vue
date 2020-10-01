@@ -9,23 +9,6 @@
         <div class="photo">
           <img src="~/assets/images/picme.png" alt="">
         </div>
-        <div class="scene-2">
-          <div class="rectanglephoto4">
-            <!--<img src="img/icons/rectanglephoto4.svg" alt="">-->
-          </div>
-          <div class="dotsphoto1">
-            <!--<img src="img/bg/dotsphoto1.png" alt="">-->
-          </div>
-          <div class="rectanglephoto2">
-            <!--<img src="img/icons/rectanglephoto2.svg" alt="">-->
-          </div>
-          <div class="rectanglephoto3">
-            <!--<img src="img/icons/rectanglephoto3.svg" alt="">-->
-          </div>
-          <div class="ovalphoto">
-            <!--<img src="img/icons/ovalphoto.svg" alt="">-->
-          </div>
-        </div>
       </div>
       <article class="about-chart">
         <h4>Pár slov o mně</h4>
@@ -37,9 +20,6 @@
           abych mohl v blízké budoucnosti pracovat na tvorbě zajímavých webů a webových aplikací.
         </p>
         <div class="spacer-lg"></div>
-        <div class="rectanglephoto">
-          <!--<img src="img/icons/rectanglephoto.svg" alt="">-->
-        </div>
         <div class="animated-skills first">
           <div class="first-skill"></div>
           <span>HTML</span>

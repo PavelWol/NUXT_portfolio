@@ -1,15 +1,6 @@
 <template>
   <div class="">
     <div class="references">
-      <div class="rectangleref2">
-        <!--<img src="img/icons/rectangleref2.svg" alt="">-->
-      </div>
-      <div class="ovalref">
-        <!--<img src="img/icons/ovalref.svg" alt="">-->
-      </div>
-      <div class="dotsref">
-        <!--<img src="img/icons/dotsref.svg" alt="">-->
-      </div>
       <section class="pt ref-text">
         <div class="ref-heading">
           <h2 data-glitch="MOJE REFERENCE">
@@ -72,11 +63,6 @@
             </a>
           </div>
           <div class="tab green">
-            <div class="scene-4">
-              <div class="rectangleref">
-                <!--<img src="img/icons/rectangleref.svg" alt="" />-->
-              </div>
-            </div>
             <a href="http://www.cirkevelim.cz/" class="bg-div bg-div-green">
               <img src="~/assets/images/green.png" alt="" />
               <div class="tabs-text">

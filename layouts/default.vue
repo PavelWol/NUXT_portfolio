@@ -26,7 +26,7 @@
       this.$nextTick(() => {
         this.$nuxt.$loading.start()
 
-        setTimeout(() => this.$nuxt.$loading.finish(), 3000)
+        setTimeout(() => this.$nuxt.$loading.finish(), 8000)
       })
     },
   };
@@ -79,5 +79,6 @@ a
 
   h1, h2
     font-size 40px
+    text-align center
 
 </style>

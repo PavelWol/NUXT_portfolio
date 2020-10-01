@@ -1,82 +1,64 @@
 <template>
   <div class="pt footer-container">
-      <div class="rectanglefot">
-        <!--<img src="img/icons/rectanglefot.svg" alt="">-->
-      </div>
-      <div class="dotsfot">
-        <!--<img src="img/icons/dotsref.svg" alt="">-->
-      </div>
-      <div class="footer-heading">
-        <h2 data-glitch="NEVÁHEJTE MĚ KONTAKTOVAT">
-          NEVÁHEJTE MĚ
-          <span>KONTAKTOVAT</span>
-        </h2>
-        <div class="rectanglefot4">
-          <!--<img src="img/icons/rectanglefot4.svg" alt="">-->
-        </div>
-      </div>
-      <div class="spacer-lg"></div>
-      <div class="spacer-lg"></div>
-      <section class="contact-form">
-        <div class="rectanglefot3">
-          <!--<img src="img/icons/rectanglefot3.svg" alt="">-->
-        </div>
-        <form method="post"> <!--action="mailhandler.php"-->
-          <div class="fields">
-            <div class="full">
-              <div class="half">
-                <div class="rectanglefot2">
-                  <!--<img src="img/icons/rectanglefot2.svg" alt="">-->
-                </div>
-                <!-- <label for="first_name">Jméno</label> -->
-                <input placeholder="Jméno" type="text" name="first_name" id="first_name" />
-              </div>
-              <div class="spacer-md"></div>
-              <div class="half">
-                <!-- <label for="email">Email</label> -->
-                <input placeholder="Email" type="text" name="email" id="email" />
-              </div>
-              <div class="spacer-md"></div>
-            </div>
-            <div class="field">
-              <div class="ovalfot">
-                <!--<img src="img/icons/ovalfot.svg" alt="">-->
-              </div>
-              <!-- <label for="message">Vaše zpráva</label> -->
-              <textarea placeholder="Vaše zpráva" name="message" id="message" rows="6"></textarea>
+    <div class="footer-heading">
+      <h2 data-glitch="NEVÁHEJTE MĚ KONTAKTOVAT">
+        NEVÁHEJTE MĚ
+        <span>KONTAKTOVAT</span>
+      </h2>
+    </div>
+    <div class="spacer-lg"></div>
+    <div class="spacer-lg"></div>
+    <section class="contact-form">
+      <form method="post"> <!--action="mailhandler.php"-->
+        <div class="fields">
+          <div class="full">
+            <div class="half">
+              <!-- <label for="first_name">Jméno</label> -->
+              <input placeholder="Jméno" type="text" name="first_name" id="first_name" />
             </div>
             <div class="spacer-md"></div>
-            <input
-            type="submit"
-            name="submit"
-            class="submit"
-            value="Odeslat"
-            />
+            <div class="half">
+              <!-- <label for="email">Email</label> -->
+              <input placeholder="Email" type="text" name="email" id="email" />
+            </div>
+            <div class="spacer-md"></div>
           </div>
-        </form>
-        <section class="socials">
-          <a href="mailto:pw.wolinger@gmail.com">
-            <img src="~/assets/images/email.png" alt="">
-            <p>pw.wolinger@gmail.com</p>
-          </a>
-          <div class="spacer-lg"></div>
-          <a href="tel:+420 777 051 053">
-            <img src="~/assets/images/phone.png" alt="">
-            <p>+420 777 051 053</p>
-          </a>
-          <div class="spacer-lg"></div>
-          <a href="">
-            <img src="~/assets/images/facebook.png" alt="">
-            <p>Facebook</p>
-          </a>
-          <div class="spacer-lg"></div>
-          <a href="">
-            <img src="~/assets/images/github.png" alt="">
-            <p>Github</p>
-          </a>
-        </section>
+          <div class="field">
+            <!-- <label for="message">Vaše zpráva</label> -->
+            <textarea placeholder="Vaše zpráva" name="message" id="message" rows="6"></textarea>
+          </div>
+          <div class="spacer-md"></div>
+          <input
+          type="submit"
+          name="submit"
+          class="submit"
+          value="Odeslat"
+          />
+        </div>
+      </form>
+      <section class="socials">
+        <a href="mailto:pw.wolinger@gmail.com">
+          <img src="~/assets/images/email.png" alt="">
+          <p>pw.wolinger@gmail.com</p>
+        </a>
+        <div class="spacer-lg"></div>
+        <a href="tel:+420 777 051 053">
+          <img src="~/assets/images/phone.png" alt="">
+          <p>+420 777 051 053</p>
+        </a>
+        <div class="spacer-lg"></div>
+        <a href="">
+          <img src="~/assets/images/facebook.png" alt="">
+          <p>Facebook</p>
+        </a>
+        <div class="spacer-lg"></div>
+        <a href="">
+          <img src="~/assets/images/github.png" alt="">
+          <p>Github</p>
+        </a>
       </section>
-    </div>
+    </section>
+  </div>
 </template>
 
 <script>
