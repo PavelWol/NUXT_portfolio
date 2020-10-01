@@ -246,6 +246,9 @@ export default {
 
 .kofola
   transform scale(.85)
+  .tabs-text
+    *
+      color black
 
 
 .kofola .future-img
@@ -533,9 +536,6 @@ export default {
 
   .kofola
     transform unset
-    .tabs-text
-      *
-        color black
 
   .ppl-references
     transform unset

@@ -34,7 +34,7 @@ export default {
   display flex
   justify-content center
   align-items center
-  animation opacity 8s linear
+  animation opacity 6s linear
 
 
 .background
@@ -47,41 +47,39 @@ export default {
   justify-content center
   align-items center
   &::after
-    content "VÍTEJTE NA MÉM PORTFOLIU"
+    content "VÍTEJTE"
     font-size 120px
     color white
     font-family ITCAvantGardeProBold, sans-serif
     animation textChange 6s linear
+    position relative
+    z-index 0
   &::before
     content ""
     background #df1a4a
     height 0
-    width 100%
+    width 80%
     position absolute
+    z-index 1
     bottom 0
     transition 1s ease
-    animation bg 3s linear
-    animation-delay 1.5s
+    animation bg 2s linear
+    animation-delay 2s
 
 
 @keyframes bg
 	0%
-		height 0
-		top 0
+    height 0
+    top 50%
+    transform translateY(-50%)
 
-	40%
-		height 100%
-
-	50%
-		height 100%
-
-  60%
-    height 100%
+  40%
+    height 25%
 
 	100%
-		height 0
-		bottom 0
-		top unset
+    height 0
+    transform translateY(-50%)
+    top 50%
 
 
 @keyframes textChange
@@ -92,10 +90,19 @@ export default {
 		content "WEBOVÝ KODÉR"
 
 	60%
-		content "VÍTEJTE NA MÉM PORTFOLIU"
+		content "VÍTEJTE"
 
-	100%
-		content "VÍTEJTE NA MÉM PORTFOLIU"
+  80%
+    transform translateX(0)
+
+  90%
+    transform translateX(-300%)
+
+	99%
+		content "VÍTEJTE"
+
+  100%
+    transform translateX(-300%)
 
 
 
@@ -110,5 +117,13 @@ export default {
     opacity 1
   100%
     opacity 0
+
+@media (max-width: 450px)
+
+  .background
+    &::before
+      width calc(100% - 48px)
+    &::after
+      font-size 40px
 
 </style>
