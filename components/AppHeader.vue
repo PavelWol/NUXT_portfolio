@@ -112,23 +112,35 @@
   .openMenu
     position absolute
     z-index 10
-    top 0
-    right 0
+    top 5px
+    right 5px
     width 30px
     height 25px
     cursor pointer
     span
       position absolute
       display block
-      width 30px
+      width 35px
       background white
       height 2px
+      transition 250ms ease
       &:first-child
         top 0
       &:nth-child(2)
         top 10px
       &:last-child
         top 20px
+  &.cross
+    span
+      transition 250ms ease
+      &:first-child
+        transform-origin 0 100%
+        transform rotate(45deg) translate(-4px)
+      &:nth-child(2)
+        width 0
+      &:last-child
+        transform-origin 0 0
+        transform rotate(-45deg) translate(-4px)
 
 
   .mobileNav .navigation
@@ -137,9 +149,27 @@
       padding 16px
       border none
       text-align center
+      opacity 0
+      animation navList .5s linear
+      animation-fill-mode: forwards;
+      &:nth-child(2)
+        animation-delay .2s
+      &:nth-child(3)
+        animation-delay .3s
+      &:nth-child(4)
+        animation-delay .4s
       a
         font-size 24px
 
+@keyframes navList
+
+  0%
+    transform translateX(25%)
+    opacity 0
+
+  100%
+    transform translateX(0)
+    opacity 1
 
 @media (min-width: 950px)
 
