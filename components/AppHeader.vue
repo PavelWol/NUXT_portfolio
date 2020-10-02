@@ -3,7 +3,7 @@
     <nuxt-link class="logo-block" to="/">
       <img class="logo" src="~/assets/images/logo-straight.png" alt="" />
     </nuxt-link>
-    <nav :class="{ mobileNav: show }">
+    <nav :class="{ mobileNav: navActive }">
       <ul class="navigation">
         <li>
           <nuxt-link class="active-link" to="/">Home</nuxt-link>
@@ -19,8 +19,8 @@
         </li>
       </ul>
     </nav>
-    <div @click="show = !show" :class="{ cross: show }" class="openMenu">
-      <div style="height:  25px;" @click="bodyClass">
+    <div @click="navActive = !navActive" :class="{ cross: navActive }" class="openMenu">
+      <div style="height: 25px;" @click="bodyOverflow">
         <span></span>
         <span></span>
         <span></span>
@@ -35,14 +35,19 @@
     name: 'AppHeader',
     data() {
       return {
-        show: false
+        navActive: false
       }
     },
     methods: {
-      bodyClass() {
-        document.querySelector(".body").classList.toggle("hovno");
+      bodyOverflow() {
+        document.querySelector(".body").classList.toggle("overflow");
       }
+    },
+    watch: {
+    '$route' () {
+      this.navActive = false
     }
+  }
   }
 
 </script>
@@ -102,7 +107,7 @@
     display flex
     justify-content center
     align-items center
-    background-color black
+    background linear-gradient(90deg, #0f1927 0, #2a3545 100%)
 
   .openMenu
     position absolute
@@ -128,6 +133,12 @@
 
   .mobileNav .navigation
     display block
+    li
+      padding 16px
+      border none
+      text-align center
+      a
+        font-size 24px
 
 
 @media (min-width: 950px)
