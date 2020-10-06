@@ -22,13 +22,19 @@
         'class': 'body',
       }
     },
-    /*mounted() {
+
+
+    mounted() {
       this.$nextTick(() => {
         this.$nuxt.$loading.start()
+        this.$nextTick().then(() => document.body.classList.add('overflow'));
 
-        setTimeout(() => this.$nuxt.$loading.finish(), 6000)
-      })
-    },*/
+        setTimeout(() => {
+          this.$nextTick().then(() => document.body.classList.remove('overflow'))
+          this.$nuxt.$loading.finish()
+        } , 6000)
+      });
+    },
   };
 </script>
 

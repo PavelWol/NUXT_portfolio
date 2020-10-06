@@ -34,7 +34,7 @@ export default {
   display flex
   justify-content center
   align-items center
-  animation opacity 6s linear
+  animation opacity 6s ease
 
 
 .background

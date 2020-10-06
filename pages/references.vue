@@ -28,7 +28,7 @@
               </div>
             </a>
           </div>
-          <div class="tab black">
+          <div style="display: none;" class="tab black">
             <a class="bg-div bg-div-black">
               <img src="~/assets/images/black.png" alt="" />
               <div class="tabs-text">

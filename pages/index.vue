@@ -6,6 +6,7 @@
         webový
         <span>kodér</span>
       </h1>
+      <!--<div style="color: white;" id="counter"></div>-->
       <img class="imac" src="~/assets/images/imac.png" alt="" />
 
     </div>
@@ -26,6 +27,19 @@ export default {
       ]
     }
   },
+  /*mounted() {
+    var i = 0;
+    var theLabel = document.getElementById("counter");
+
+    this.$nextTick().then(() => {
+      var interval = setInterval(() => {
+        if (i === 100) clearInterval(interval);
+        theLabel.innerHTML = i;
+        i++;
+      },
+    100);
+    })
+  }*/
 }
 </script>
 
