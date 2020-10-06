@@ -3,17 +3,16 @@
     <div class="references">
       <section class="pt ref-text">
         <div class="ref-heading">
-          <h2 data-glitch="MOJE REFERENCE">
-            MOJE
-            <span>REFERENCE</span>
+          <h2 data-glitch="PÁR REFERENCÍ">
+            PÁR
+            <span>REFERENCÍ</span>
           </h2>
         </div>
         <div class="spacer-lg"></div>
         <div class="spacer-lg"></div>
         <div class="ref-showcase-text">
           <p>
-            Ukázky několika vybraných projektů, které
-            jsme vytvářeli s týmem maesty.co.
+            Ukázky několika vybraných projektů.
           </p>
         </div>
       </section>
@@ -106,8 +105,8 @@
             </div>
             <div class="spacer-lg"></div>
             <div class="they-said-ppl">
-              <p>Vojtěch Fišar,</p>
-              <p>Twitch streamer</p>
+              <p>Petr Víteček,</p>
+              <p>Neat Solution, s.r.o</p>
             </div>
             <div class="spacer-lg"></div>
           </div>
@@ -120,8 +119,8 @@
             </div>
             <div class="spacer-lg"></div>
             <div class="they-said-ppl">
-              <p>Melichar Humáč,</p>
-              <p>Lorem ipsumáč</p>
+              <p>lorem ipsum,</p>
+              <p>lorem ipsum</p>
             </div>
             <div class="spacer-lg"></div>
           </div>
