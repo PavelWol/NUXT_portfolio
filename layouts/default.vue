@@ -32,7 +32,7 @@
         setTimeout(() => {
           this.$nextTick().then(() => document.body.classList.remove('overflow'))
           this.$nuxt.$loading.finish()
-        } , 6000)
+        } , 9000)
       });
     },
   };

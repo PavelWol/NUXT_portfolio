@@ -1,6 +1,19 @@
 <template>
   <div v-if="loading" class="loading-page">
-    <div class="background"></div>
+    <div class="background">
+      <div class="load-con">
+        <div class="loader">
+          <div class="outer"></div>
+          <div class="inner"></div>
+        </div>
+        <div class="progress-bar">
+          <div class="bar" data-size="100">
+            <span style="color: white;" class="perc"></span>
+          </div>
+        </div>
+        <h3></h3>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,6 +29,32 @@ export default {
     finish () {
       this.loading = false
     }
+  },
+  mounted() {
+    function loading() {
+      document.querySelectorAll(".bar").forEach(function(current) {
+      let startWidth = 0;
+      const endWidth = current.dataset.size;
+
+    /*
+    setInterval() time sholud be set as trasition time / 100.
+    In our case, 2 seconds / 100 = 20 milliseconds.
+    */
+    const interval = setInterval(frame, 60);
+
+    function frame() {
+      if (startWidth >= endWidth) {
+        clearInterval(interval);
+      } else {
+          startWidth++;
+          current.style.width = `${endWidth}%`;
+          current.firstElementChild.innerText = `${startWidth}%`;
+        }
+     }
+  });
+}
+
+setTimeout(loading, 1000);
   }
 };
 </script>
@@ -34,7 +73,7 @@ export default {
   display flex
   justify-content center
   align-items center
-  animation opacity 6s ease
+  animation opacity 9s ease
 
 
 .background
@@ -46,66 +85,108 @@ export default {
   display flex
   justify-content center
   align-items center
-  &::after
-    content "VÍTEJTE"
-    font-size 120px
-    color white
-    font-family ITCAvantGardeProBold, sans-serif
-    animation textChange 6s linear
-    position relative
-    z-index 0
-  &::before
-    content ""
-    background #df1a4a
-    height 0
-    width 100%
-    max-width 90%
+
+
+.load-con
+  width 100%
+  max-width 300px
+
+
+.progress-bar
+  height 30px
+  margin 32px 0
+  background-color black
+  border-radius 20px
+  overflow hidden
+  box-shadow 2px 0 10px inset rgba(0,0,0,0.2)
+  position relative
+
+
+.bar
+  width 0
+  height 100%
+  background-color #df1a4a
+  background-size 30px 30px
+  box-shadow 2px 0 10px inset rgba(0,0,0,0.2)
+  transition width 6s ease-out
+
+
+.perc
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+  color #fff
+  font-weight bold
+
+
+.loader
+  position relative
+  display flex
+  justify-content center
+  align-items center
+
+  .outer
+    border 5px solid white
+    opacity .9
+    border-right-color transparent
+    border-left-color transparent
+    width 70px
+    height 70px
+    border-radius 50%
+    box-shadow 0 0 35px #df1a4a
+    animation spin-pulse 1s linear infinite
+
+  .inner
+    border 5px solid white
+    opacity .9
+    border-left-color transparent
+    border-right-color transparent
+    border-radius 50%
+    box-shadow 0 0 15px #df1a4a
+    width 40px
+    height 40px
     position absolute
-    z-index 1
-    bottom 0
-    transition 1s ease
-    animation bg 2s linear
-    animation-delay 2s
+    animation spin-right 3s linear infinite
 
 
-@keyframes bg
-	0%
-    height 0
-    top 50%
-    transform translateY(-50%)
+h3
+  &::before
+    content "Vytvářím aplikaci, prosím o strpení"
+    animation text 1s linear forwards
+    animation-delay 6.5s
 
-  40%
-    height 25%
+@keyframes spin-pulse
 
-	100%
-    height 0
-    transform translateY(-50%)
-    top 50%
+  from
+    transform rotate(160deg)
+    box-shadow0 0 1px red
+
+  50%
+    transform rotate(145deg)
+
+  to
+    transform rotate(-320deg)
 
 
-@keyframes textChange
-	0%
-		content "WEBOVÝ KODÉR"
+@keyframes spin-right
 
-	40%
-		content "WEBOVÝ KODÉR"
+  from
+    transform rotate(0deg)
 
-	60%
-		content "VÍTEJTE"
+  50%
+    transform rotate(180deg)
 
-  80%
-    transform translateX(0)
+  to
+    transform rotate(360deg)
 
-  90%
-    transform translateX(-300%)
+@keyframes text
 
-	99%
-		content "VÍTEJTE"
+  0%
+    content "Vytvářím aplikaci, prosím o strpení"
 
   100%
-    transform translateX(-300%)
-
-
+    content "Hotovo"
 
 @keyframes opacity
   0%
