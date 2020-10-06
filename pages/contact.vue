@@ -9,7 +9,7 @@
     <div class="spacer-lg"></div>
     <div class="spacer-lg"></div>
     <section class="contact-form">
-      <form method="post"> <!--action="mailhandler.php"-->
+      <form style="display: none;" method="post" action="mailhandler.php">
         <div class="fields">
           <div class="full">
             <div class="half">
