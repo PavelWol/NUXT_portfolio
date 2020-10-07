@@ -37,7 +37,7 @@
         </div>
       </form>
       <section class="socials">
-        <a href="mailto:pw.wolinger@gmail.com">
+        <a href="mailto:pw.wolinger@gmail.com?subject=zprava z portolia">
           <img src="~/assets/images/email.png" alt="">
           <p>pw.wolinger@gmail.com</p>
         </a>
@@ -47,12 +47,12 @@
           <p>+420 777 051 053</p>
         </a>
         <div class="spacer-lg"></div>
-        <a href="">
+        <a target="_blank" href="https://www.facebook.com/pavel.wolinger/">
           <img src="~/assets/images/facebook.png" alt="">
           <p>Facebook</p>
         </a>
         <div class="spacer-lg"></div>
-        <a href="">
+        <a target="_blank" href="https://github.com/PavelWol">
           <img src="~/assets/images/github.png" alt="">
           <p>Github</p>
         </a>
@@ -68,7 +68,7 @@ export default {
 
   head() {
       return {
-        title: 'Kontakt',
+        title: 'Pavel Wolinger | Webový kodér',
         meta: [
           {
             hid: 'description',

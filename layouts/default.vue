@@ -23,7 +23,6 @@
       }
     },
 
-
     mounted() {
       this.$nextTick(() => {
         this.$nuxt.$loading.start()
@@ -32,7 +31,7 @@
         setTimeout(() => {
           this.$nextTick().then(() => document.body.classList.remove('overflow'))
           this.$nuxt.$loading.finish()
-        } , 9000)
+        } , 4000)
       });
     },
   };

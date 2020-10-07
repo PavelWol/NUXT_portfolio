@@ -12,7 +12,9 @@
         <div class="spacer-lg"></div>
         <div class="ref-showcase-text">
           <p>
-            Ukázky několika vybraných projektů.
+            Několik vybraných projektů, na kterých jsem pracoval.
+            <br/>
+            Větší projekty realizujeme s naším týmem z <a href="htttps://maesty.co">maesty.co</a>
           </p>
         </div>
       </section>
@@ -93,24 +95,26 @@
             <div class="spacer-lg"></div>
             <div class="they-said-ppl">
               <p>Jan Wolinger,</p>
+              <p style="visibility: hidden">P</p>
               <p>Product designer</p>
             </div>
             <div class="spacer-lg"></div>
           </div>
           <div class="mySlides fade">
             <div class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Cumque temporibus necessitatibus iste! Quis eaque eos sit,
-              veritatis dolore ea quia voluptate illo minima molestiae earum!
+              „K práci přistupuje tak, že se snaží s každým
+              dalším projektem posunout o něco kousek dál.
+              Svou práci vždy dotáhne dokonce.“
             </div>
             <div class="spacer-lg"></div>
             <div class="they-said-ppl">
               <p>Petr Víteček,</p>
+              <p style="visibility: hidden">P</p>
               <p>Neat Solution, s.r.o</p>
             </div>
             <div class="spacer-lg"></div>
           </div>
-          <div class="mySlides fade">
+          <!--<div class="mySlides fade">
             <div class="text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Itaque laboriosam dolorum ipsa optio sapiente in exercitationem
@@ -120,10 +124,11 @@
             <div class="spacer-lg"></div>
             <div class="they-said-ppl">
               <p>lorem ipsum,</p>
+              <p style="visibility: hidden">P</p>
               <p>lorem ipsum</p>
             </div>
             <div class="spacer-lg"></div>
-          </div>
+          </div>-->
           <a class="next" onclick="plusSlides(1)"><img src="~/assets/images/arrow-right.svg" alt=""></a>
         </div>
         <br>
@@ -134,9 +139,9 @@
           <div class="dot-container" onclick="currentSlide(2)">
             <span class="dot"></span>
           </div>
-          <div class="dot-container" onclick="currentSlide(3)">
+          <!--<div class="dot-container" onclick="currentSlide(3)">
             <span class="dot"></span>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -147,7 +152,7 @@
 export default {
   head() {
     return {
-      title: 'Reference',
+      title: 'Pavel Wolinger | Webový kodér',
       meta: [
         {
           hid: 'description',

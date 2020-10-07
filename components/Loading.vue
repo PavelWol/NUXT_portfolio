@@ -40,7 +40,7 @@ export default {
     setInterval() time sholud be set as trasition time / 100.
     In our case, 2 seconds / 100 = 20 milliseconds.
     */
-    const interval = setInterval(frame, 60);
+    const interval = setInterval(frame, 35);
 
     function frame() {
       if (startWidth >= endWidth) {
@@ -54,7 +54,7 @@ export default {
   });
 }
 
-setTimeout(loading, 1000);
+setTimeout(loading, 0);
   }
 };
 </script>
@@ -73,7 +73,7 @@ setTimeout(loading, 1000);
   display flex
   justify-content center
   align-items center
-  animation opacity 9s ease
+  animation opacity 4s ease
 
 
 .background
@@ -108,7 +108,7 @@ setTimeout(loading, 1000);
   background-color #df1a4a
   background-size 30px 30px
   box-shadow 2px 0 10px inset rgba(0,0,0,0.2)
-  transition width 6s ease-out
+  transition width 3.5s ease-out
 
 
 .perc
@@ -152,9 +152,7 @@ setTimeout(loading, 1000);
 
 h3
   &::before
-    content "Vytvářím aplikaci, prosím o strpení"
-    animation text 1s linear forwards
-    animation-delay 6.5s
+    content "Načítání ..."
 
 @keyframes spin-pulse
 
@@ -180,23 +178,14 @@ h3
   to
     transform rotate(360deg)
 
-@keyframes text
-
-  0%
-    content "Vytvářím aplikaci, prosím o strpení"
-
-  100%
-    content "Hotovo"
 
 @keyframes opacity
   0%
     opacity 1
-  50%
+
+  95%
     opacity 1
-  75%
-    opacity 1
-  90%
-    opacity 1
+
   100%
     opacity 0
 

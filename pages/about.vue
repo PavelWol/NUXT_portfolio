@@ -41,7 +41,7 @@
   export default {
     head() {
       return {
-        title: 'O mně',
+        title: 'Pavel Wolinger | Webový kodér',
         meta: [
           {
             hid: 'description',
