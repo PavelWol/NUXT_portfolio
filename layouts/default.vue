@@ -23,17 +23,17 @@
       }
     },
 
-    mounted() {
-      this.$nextTick(() => {
-        this.$nuxt.$loading.start()
-        this.$nextTick().then(() => document.body.classList.add('overflow'));
-
-        setTimeout(() => {
-          this.$nextTick().then(() => document.body.classList.remove('overflow'))
-          this.$nuxt.$loading.finish()
-        } , 4000)
-      });
-    },
+    // mounted() {
+    //   this.$nextTick(() => {
+    //     this.$nuxt.$loading.start()
+    //     this.$nextTick().then(() => document.body.classList.add('overflow'));
+    //
+    //     setTimeout(() => {
+    //       this.$nextTick().then(() => document.body.classList.remove('overflow'))
+    //       this.$nuxt.$loading.finish()
+    //     } , 4000)
+    //   });
+    // },
   };
 </script>
 
