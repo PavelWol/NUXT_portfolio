@@ -6,8 +6,10 @@
         webový
         <span>kodér</span>
       </h1>
-      <!--<div style="color: white;" id="counter"></div>-->
-      <img class="imac" src="~/assets/images/imac.png" alt="" />
+
+      <div class="laptop-center">
+        <div class="laptop"></div>
+      </div>
 
     </div>
   </div>
@@ -59,6 +61,47 @@ h1
 
 .imac
   width 50%
+
+
+.laptop-center
+  position relative
+  margin-left 80px
+
+
+.laptop
+  width 340px
+  height 200px
+  background #000
+  border 16px solid #262626
+  border-right-width 12px
+  border-left-width 12px
+  box-shadow 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff
+  overflow hidden
+  &::before
+    content ""
+    position absolute
+    bottom -10px
+    left 50%
+    transform translateX(-50%)
+    width 130%
+    height 10px
+    background #fff
+    border-top 2px solid #ccc
+    border-bottom 4px solid #ccc
+    border-top-left-radius 2px
+    border-top-right-radius 2px
+    border-bottom-left-radius 10px
+    border-bottom-right-radius 10px
+  &::after
+    content ""
+    position absolute
+    width 4px
+    height 4px
+    border-radius 50%
+    background #000
+    left 50%
+    top 6px
+
 
 @media (max-width: 950px)
 
