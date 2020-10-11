@@ -24,7 +24,7 @@ export default {
 <style scoped lang="stylus">
 
 .socials
-  margin-top 10%
+  margin-top 120px
 
 .online-text
   border-top 1px solid white
