@@ -95,27 +95,9 @@ setTimeout(loading, 0);
 .progress-bar
   height 30px
   margin 32px 0
-  background-color black
-  border-radius 20px
-  overflow hidden
-  box-shadow 2px 0 10px inset rgba(0,0,0,0.2)
-  position relative
-
-
-.bar
-  width 0
-  height 100%
-  background-color #df1a4a
-  background-size 30px 30px
-  box-shadow 2px 0 10px inset rgba(0,0,0,0.2)
-  transition width 3.5s ease-out
 
 
 .perc
-  position absolute
-  top 50%
-  left 50%
-  transform translate(-50%, -50%)
   color #fff
   font-weight bold
 
