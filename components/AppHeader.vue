@@ -3,7 +3,7 @@
     <nuxt-link class="logo-block" to="/">
       <img class="logo" src="~/assets/images/logo-straight.png" alt="" />
     </nuxt-link>
-    <nav :class="{ mobileNav: navActive }">
+    <nav style="display: none;" :class="{ mobileNav: navActive }">
       <ul class="navigation">
         <li>
           <nuxt-link class="active-link" to="/">Home</nuxt-link>
@@ -19,7 +19,7 @@
         </li>
       </ul>
     </nav>
-    <div @click="navActive = !navActive" :class="{ cross: navActive }" class="openMenu">
+    <div style="display: none;" @click="navActive = !navActive" :class="{ cross: navActive }" class="openMenu">
       <div style="height: 25px;" @click="bodyOverflow">
         <span></span>
         <span></span>

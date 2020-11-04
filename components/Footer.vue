@@ -1,6 +1,6 @@
 <template>
   <div class="socials">
-    <div class="online-text">
+    <div style="display: none;" class="online-text">
       <p>
         Najdete mně online nebo <nuxt-link to="/contact">mi napište</nuxt-link>.
       </p>

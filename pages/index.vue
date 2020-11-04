@@ -10,11 +10,23 @@
       <img class="imac" src="~/assets/images/imac.png" alt="" />
 
     </div>
+    <About />
+    <References />
+    <Contact />
   </div>
 </template>
 
 <script>
+import About from "../components/About";
+import References from "../components/References";
+import Contact from "../components/Contact";
+
 export default {
+  components: {
+    About,
+    References,
+    Contact
+  },
   head() {
     return {
       title: 'Pavel Wolinger | Webový kodér',
