@@ -13,16 +13,31 @@
       </section>
       <div class="tabs">
         <div class="desktop">
-          <div class="imac-tab">
-            <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-elim.png') + ')'}" class="screen">
+          <div class="laptop_section">
+            <div @click="open_1 = !open_1" :class="{ open: open_1 }" class="laptop js-laptop">
+              <div class="laptop-top">
+                <div class="laptop__lid"></div>
+                <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-arched.png') + ')'}" class="laptop__screen">
+                </div>
+              </div>
+              <div class="laptop__base"></div>
             </div>
-            <img src="~/assets/images/imac-stand-black.png" alt="">
           </div>
-          <div class="imac-tab">
+          <div class="laptop_section">
+            <div @click="open_2= !open_2" :class="{ open: open_2 }" class="laptop js-laptop">
+              <div class="laptop-top">
+                <div class="laptop__lid"></div>
+                <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-kofola.png') + ')'}" class="laptop__screen">
+                </div>
+              </div>
+              <div class="laptop__base"></div>
+            </div>
+          </div>
+          <!--<div class="imac-tab">
             <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-ods.png') + ')'}" class="screen"></div>
             <img src="~/assets/images/imac-stand-black.png" alt="">
-          </div>
-          <div class="imac-tab">
+          </div>-->
+          <div class="laptop_section">
             <div class="ref-showcase-text">
               <p>
                 Několik vybraných projektů, na kterých jsem pracoval.
@@ -31,17 +46,35 @@
               </p>
             </div>
           </div>
-          <div class="imac-tab">
-            <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-arched.png') + ')'}" class="screen"></div>
-            <img src="~/assets/images/imac-stand-black.png" alt="">
+          <div class="laptop_section">
+            <div @click="open_3= !open_3" :class="{ open: open_3 }" class="laptop js-laptop">
+              <div class="laptop-top">
+                <div class="laptop__lid"></div>
+                <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-ods.png') + ')'}" class="laptop__screen">
+                </div>
+              </div>
+              <div class="laptop__base"></div>
+            </div>
           </div>
-          <div class="imac-tab">
-            <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-maesty.png') + ')'}" class="screen"></div>
-            <img src="~/assets/images/imac-stand-black.png" alt="">
+          <div class="laptop_section">
+            <div @click="open_4= !open_4" :class="{ open: open_4 }" class="laptop js-laptop">
+              <div class="laptop-top">
+                <div class="laptop__lid"></div>
+                <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-maesty.png') + ')'}" class="laptop__screen">
+                </div>
+              </div>
+              <div class="laptop__base"></div>
+            </div>
           </div>
-          <div class="imac-tab">
-            <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-kofola.png') + ')'}" class="screen"></div>
-            <img src="~/assets/images/imac-stand-black.png" alt="">
+          <div class="laptop_section">
+            <div @click="open_5= !open_5" :class="{ open: open_5 }" class="laptop js-laptop">
+              <div class="laptop-top">
+                <div class="laptop__lid"></div>
+                <div :style="{ backgroundImage: 'url(' + require('../assets/images/desktop-elim.png') + ')'}" class="laptop__screen">
+                </div>
+              </div>
+              <div class="laptop__base"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -133,12 +166,18 @@ export default {
       ]
     }
   },
-  data(){
+  data() {
     return {
-      backgroundUrl:require('~/assets/images/imac-stand.png')
+      backgroundUrl: require('~/assets/images/imac-stand.png'),
+      open_1: false,
+      open_2: false,
+      open_3: false,
+      open_4: false,
+      open_5: false
     }
-  }
+  },
 }
+
 
 </script>
 <style scoped lang="stylus">
@@ -170,25 +209,127 @@ export default {
   display flex
   flex-wrap wrap
 
-  .imac-tab
-    width 33.33%
-    transform scale(.85)
 
-    .screen
-      padding 25%
-      border 12px solid #222222
-      border-top-left-radius 15px
-      border-top-right-radius 15px
-      background-position top
-      background-size cover
-      transition 10s linear
-      &:hover
-        background-position bottom
-        transition 6s linear
+.laptop_section
+  width 33.33%
+  transform scale(.85)
+  align-self center
 
 
-    img
-      width 100%
+.laptop
+  display flex
+  flex-direction: column
+  cursor pointer
+
+  .laptop-top
+   height auto
+   width 100%
+   margin 0 auto
+   perspective-origin 50% 100%
+   perspective 2000px
+   z-index 2
+
+
+  .laptop__lid
+    position absolute
+    right 0
+    bottom 0
+    left 0
+    margin 0 auto
+    background: #e6e7e8
+    height 10px
+    width 100%
+    border-radius 15px 15px 0 0
+    border-bottom none
+    transform rotateX(-90deg)
+    transition all 10ms
+    z-index 1
+    perspective none
+
+
+  .laptop__lid
+    border-bottom 1px solid black
+    transform rotateX(0)
+    transition all 250ms
+    transition-delay 150ms
+  .laptop__screen
+    transform rotateX(-90deg)
+
+
+.open
+  .laptop__screen
+    transform rotateX(0)
+  .laptop__lid
+    transform rotateX(-90deg)
+    transition all 100ms
+
+.laptop__screen
+  display flex
+  justify-content center
+  align-items center
+  height 225px
+  min-width 280px
+  width calc(85% - 30px)
+  margin 0 auto
+  background-color #000
+  border: 20px solid #373435
+  border-right-width 15px
+  border-left-width 15px
+  border-radius: 15px 15px 0 0
+  transform-origin center bottom
+  transform rotateX(0deg)
+  transform-style preserve-3d
+  transition all 250ms ease-out
+  background-size cover
+
+  &::before
+    content ""
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+  &::after
+    content: '';
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    width: 1%;
+    height: 1.5164%;
+    margin-left: -0.5%;
+    border-radius: 50%;
+    background: #525252;
+
+
+.laptop__base
+  position relative
+  background #e6e7e8
+  width: 100%
+  height 18px
+  border-radius 0 0 15px 15px
+  &::before
+    content ""
+    position absolute
+    top 0
+    left calc(50% - 75px)
+    width 150px
+    height 12px
+    background-color #a9abae
+    border-radius 0 0 15px 15px
+    z-index 10
+  &::after
+    content ""
+    position absolute
+    right 0
+    bottom -3px
+    left 0
+    width 95%
+    margin 0 auto
+    height 0
+    box-shadow 0 0 10px 5px rgba(0, 0, 0, 0.5)
+    border-radius 15px
+    z-index -1
 
 /* TABS END */
 
